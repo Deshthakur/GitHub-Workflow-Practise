@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6.0.2
       - name: Greetings
-        run: echo "Hello from ubuntu"
+        run: write-host "Hello from ubuntu"
 
   my_second_job:
     name: My second job
