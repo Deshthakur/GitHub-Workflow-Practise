@@ -1,12 +1,12 @@
 name: Hello DP Workflow
 on: workflow_dispatch
+env:
+  name: 'DP Singh'
 jobs:
   my_first_job:
     name: My first job
     continue-on-error: true
     runs-on: ubuntu-latest
-    env:
-      name: 'DP Singh'
     steps:
       - name: Checkout
         uses: actions/checkout@v6.0.2
