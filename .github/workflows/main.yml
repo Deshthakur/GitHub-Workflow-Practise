@@ -20,5 +20,5 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Greetings
-        run: write-host "Hello from windows created by $name"
+        run: write-host "Hello from windows created by $env:name"
 
