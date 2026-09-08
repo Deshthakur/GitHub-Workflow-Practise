@@ -5,6 +5,7 @@ on: workflow_dispatch
 jobs:
   my_first_job:
     name: My first job
+    continue-on-error: true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
