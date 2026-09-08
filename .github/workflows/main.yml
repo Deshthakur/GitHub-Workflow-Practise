@@ -9,9 +9,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6.0.2
-        
       - name: Greetings
-        run: echo "Hello World"
+        run: echo "Hello from ubuntu"
 
-      
+  my_second_job:
+    name: My second job
+    runs-on: windows-latest
+    steps:
+      - name: Greetings
+        run: write-host "Hello from windows"
 
