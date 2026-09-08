@@ -14,6 +14,7 @@ jobs:
 
   my_second_job:
     name: My second job
+    needs: my_first_job
     runs-on: windows-latest
     steps:
       - name: Greetings
