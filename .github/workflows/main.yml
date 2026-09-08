@@ -1,7 +1,7 @@
 name: Hello DP Workflow
-
 on: workflow_dispatch
-
+env:
+  name: DP
 jobs:
   my_first_job:
     name: My first job
@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6.0.2
       - name: Greetings
-        run: echo "Hello from ubuntu"
+        run: echo "Hello from ubuntu create by $name"
 
   my_second_job:
     name: My second job
@@ -20,5 +20,5 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Greetings
-        run: write-host "Hello from windows"
+        run: write-host "Hello from windows created by $name"
 
