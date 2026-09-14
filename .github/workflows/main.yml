@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6.0.2
       - name: Greetings
-        run: echo "Hello from ubuntu create by ${{ vars.name }}"
+        run: echo "Hello from ubuntu create by ${{ vars.NAME }}"
 
   my_second_job:
     name: My second job
@@ -20,5 +20,5 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Greetings
-        run: write-host "Hello from windows created by $env.name"
+        run: write-host "Hello from windows created by $env.NAME"
 
